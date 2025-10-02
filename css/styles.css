@@ -1,0 +1,93 @@
+body {
+  background-color: #FFFFFF;
+  width: 80%;
+  margin: 16px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+section.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+}
+section.hero h1.title {
+  font-family: "Merriweather", sans-serif;
+  font-size: 65px;
+  width: 90%;
+  margin: 0px;
+}
+section.hero p.description {
+  opacity: 0.5;
+  width: 100%;
+  font-size: 20px;
+  font-weight: lighter;
+}
+section.hero a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #151515;
+}
+section.hero a.button-primary {
+  color: #FFFFFF;
+  width: 260px;
+  font-size: 20px;
+}
+section.hero a span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+section.hero a div {
+  width: 65px;
+  height: 72px;
+  background-image: url(../img/icon/gold-rigth.svg);
+  background-repeat: no-repeat;
+}
+section.hero a:hover {
+  background-color: #D5966C;
+  color: #151515;
+}
+section.hero a:hover div {
+  background-image: url(../img/icon/black-rigth.svg);
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #151515;
+}
+a.button-secondary {
+  color: #FFFFFF;
+  width: 260px;
+  font-size: 20px;
+}
+a span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+a div {
+  width: 65px;
+  height: 72px;
+  background-image: url(../img/icon/gold-left.svg);
+  background-repeat: no-repeat;
+}
+a:hover {
+  background-color: #D5966C;
+  color: #151515;
+}
+a:hover div {
+  background-image: url(../img/icon/black-left.svg);
+}/*# sourceMappingURL=styles.css.map */

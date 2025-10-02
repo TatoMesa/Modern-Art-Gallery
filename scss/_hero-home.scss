@@ -1,0 +1,75 @@
+@use 'variables';
+
+section.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr; // dos columnas
+    align-items: center;            // centra verticalmente
+    gap: 20px;
+    height: 80vh;
+
+  h1.title{
+    font-family: "Merriweather", sans-serif;
+    font-size: 65px;
+    width: 90%;
+    margin: 0px;
+  }
+  
+  p.description{
+    opacity: 0.5;
+    width: 100%;
+    font-size: 20px;
+    font-weight:lighter;
+  }
+  
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$color-black;
+    
+    &.button-primary{
+      color: variables.$color-white;
+      width: 260px;
+      font-size: 20px;
+    }
+    
+    span{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+    
+    div{
+      width: 65px;
+      height: 72px;
+      background-image: url(../img/icon/gold-rigth.svg);
+      background-repeat: no-repeat;
+    }
+
+    &:hover{
+      background-color: variables.$color-gold;
+      color: variables.$color-black;
+            
+      div{
+        background-image: url(../img/icon/black-rigth.svg);
+      }
+    }
+  }
+
+
+
+
+
+}
+  
+  
+        
+        
+      
+    
+
+
+
+
+

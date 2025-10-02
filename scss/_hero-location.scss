@@ -1,0 +1,36 @@
+@use 'variables';
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$color-black;
+    
+    &.button-secondary{
+      color: variables.$color-white;
+      width: 260px;
+      font-size: 20px;
+    }
+    
+    span{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+    
+    div{
+      width: 65px;
+      height: 72px;
+      background-image: url(../img/icon/gold-left.svg);
+      background-repeat: no-repeat;
+    }
+
+    &:hover{
+      background-color: variables.$color-gold;
+      color: variables.$color-black;
+            
+      div{
+        background-image: url(../img/icon/black-left.svg);
+      }
+    }
+  }
