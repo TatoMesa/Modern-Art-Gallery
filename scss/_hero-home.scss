@@ -1,67 +1,117 @@
 @use 'variables';
 
-section.hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr; // dos columnas
-    align-items: center;            // centra verticalmente
-    gap: 20px;
-    height: 80vh;
+section.hero-home{
+  color: variables.$color-black;
+  background-image: url("../img/img/mobile/Hero-mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:top;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  padding-top: 65%;
+  width: 100%;
 
-  h1.title{
-    font-family: "Merriweather", sans-serif;
-    font-size: 65px;
-    width: 90%;
-    margin: 0px;
+
+  @media (min-width: 768px){
+    background-image: url("../img/img/tablet/Hero-tablet.jpg");
+    background-position: left;
+    padding-top: 20%;
+   
+  }
+  @media (min-width: 1024px){
+    background: 
+      url("../img/img/desktop/Hero-desktop.jpg"),
+      linear-gradient(
+        to right,
+        variables.$color-black 0%,
+        variables.$color-black 50%,
+        variables.$color-white 50%,
+        variables.$color-white 100%
+      );
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    padding-top: 15%;
+    
   }
   
-  p.description{
-    opacity: 0.5;
-    width: 100%;
-    font-size: 20px;
-    font-weight:lighter;
+  div.hero{
+     @media (min-width: 768px){
+      width: 50%;
+      position:relative;
+      padding-left: 55%;
+      padding-bottom: 25%;
+     
+      }
+      @media (min-width: 1024px){
+        font-size: 15px;
+        padding-left: 25%;
+        padding-bottom: 25%;
+        
+      }
   }
   
-  a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: variables.$color-black;
-    
-    &.button-primary{
-      color: variables.$color-white;
-      width: 260px;
-      font-size: 20px;
+    h1.title{
+      font-family: "Merriweather", sans-serif;
+      font-size: 40px;
+      @media (min-width: 768px) {
+        padding-left: 55%;
+        
+      }
+      @media (min-width: 1024px){
+        color: variables.$color-white;
+        padding-left: 10%;
+        padding-top: 0%;
+      }
     }
     
-    span{
-      display: inline-block;
-      text-align: center;
-      width: 100%;
+    p.description{
+      width: 90%;
+      font-size: 15px;
+      color: variables.$color-dark-grey;
+      margin: 10px 0px;
+      @media (min-width: 768px){
+        width: 80%;
+      }
+      @media (min-width: 1024px){
+        font-size: 20px;
+      }
     }
-    
-    div{
-      width: 65px;
-      height: 72px;
-      background-image: url(../img/icon/gold-rigth.svg);
-      background-repeat: no-repeat;
-    }
-
-    &:hover{
-      background-color: variables.$color-gold;
-      color: variables.$color-black;
-            
+    a{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: variables.$color-black;
+      &.button-primary{
+        left: 0;
+        color: variables.$color-white;
+        width: 260px;
+        font-size: 20px;
+      }
+      span{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+      }
       div{
-        background-image: url(../img/icon/black-rigth.svg);
+        width: 65px;
+        height: 72px;
+        background-image: url(../img/icon/gold-rigth.svg);
+        background-repeat: no-repeat;
+      }
+      &:hover{
+        background-color: variables.$color-gold;
+        color: variables.$color-black;
+        div{
+          background-image: url(../img/icon/black-rigth.svg);
       }
     }
   }
-
-
-
-
-
 }
+
   
   
         
