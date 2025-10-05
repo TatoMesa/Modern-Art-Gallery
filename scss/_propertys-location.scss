@@ -5,13 +5,17 @@ section.propertys-location{
     background-color: variables.$color-black;
     display: flex;
     flex-direction: column;
-    h1{
+    h1.h1-location{
         margin-top:10px;
+        color: variables.$color-white;
         
     }
     h3{
         margin: 0;
         color: variables.$color-gold;
+    }
+    p{
+        color: variables.$color-white;
     }
     p:last-child{
         margin-top: 15px;

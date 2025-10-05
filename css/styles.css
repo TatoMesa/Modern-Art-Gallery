@@ -10,7 +10,7 @@ body {
 
 div.page {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1800px;
   min-height: 100vh;
 }
 
@@ -142,6 +142,11 @@ a.button-secondary {
     left: 10%;
   }
 }
+@media (min-width: 1024px) {
+  a.button-secondary {
+    left: 20%;
+  }
+}
 a span {
   display: inline-block;
   text-align: center;
@@ -200,12 +205,16 @@ section.propertys-location {
   display: flex;
   flex-direction: column;
 }
-section.propertys-location h1 {
+section.propertys-location h1.h1-location {
   margin-top: 10px;
+  color: #FFFFFF;
 }
 section.propertys-location h3 {
   margin: 0;
   color: #D5966C;
+}
+section.propertys-location p {
+  color: #FFFFFF;
 }
 section.propertys-location p:last-child {
   margin-top: 15px;
