@@ -370,15 +370,20 @@ section.propertys-location {
   flex-direction: column;
 }
 section.propertys-location h1.h1-location {
+  font-family: "Big Shoulders", sans-serif;
   margin-top: 10px;
   color: #FFFFFF;
 }
 section.propertys-location h3 {
-  margin: 0;
+  margin: 0, 5px;
   color: #D5966C;
 }
 section.propertys-location p {
   color: #FFFFFF;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 150;
+  margin: 0;
 }
 section.propertys-location p:last-child {
   margin-top: 15px;
