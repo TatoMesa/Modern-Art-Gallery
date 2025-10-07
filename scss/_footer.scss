@@ -5,11 +5,16 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 25px;
- 
+    p{
+        font-family: "Outfit",sans-serif ;
+        font-weight: 150;
+        margin: 0;
+        padding:0;
+    }
     
     p:nth-child(1){
         width: 110px;
-        margin: 0;
+        
     }
     img{
         width: 110px;
