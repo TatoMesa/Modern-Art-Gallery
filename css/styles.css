@@ -292,8 +292,9 @@ section.gallery div.body-gallery div.footer-gallery h3.footer-gallery {
 }
 @media (min-width: 1024px) {
   section.gallery div.body-gallery div.footer-gallery h3.footer-gallery {
-    font-size: 4rem;
-    width: 80%;
+    font-size: 3rem;
+    width: 100%;
+    padding: 0;
   }
 }
 section.gallery div.body-gallery div.footer-gallery p.footer-gallery {
@@ -308,8 +309,8 @@ section.gallery div.body-gallery div.footer-gallery p.footer-gallery {
 }
 @media (min-width: 1024px) {
   section.gallery div.body-gallery div.footer-gallery p.footer-gallery {
-    font-size: 1.7rem;
-    width: 80%;
+    font-size: 1.2rem;
+    width: 85%;
   }
 }
 @media (min-width: 768px) {
@@ -347,6 +348,16 @@ section.gallery div.body-gallery div.footer-gallery p.footer-gallery {
   }
   section.gallery div.body-gallery div.footer-gallery p {
     font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  section.gallery div.body-gallery div.footer-gallery {
+    padding: 25% 5%;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  section.gallery div.body-gallery div.footer-gallery {
+    padding: 10% 5%;
   }
 }
 @media (min-width: 1024px) {

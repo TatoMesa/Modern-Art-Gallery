@@ -60,6 +60,7 @@ section.gallery{
         padding-top: 2%;
         img{
            width: 100%;
+          
         }
     
         div.footer-gallery{
@@ -72,8 +73,10 @@ section.gallery{
                 margin:0;
                 line-height: 0.9;
                 @media (min-width: 1024px){
-                    font-size: 4rem;
-                    width: 80%;
+                    font-size: 3rem;
+                    width: 100%;
+                    padding: 0;
+
                 }
             }
             p.footer-gallery{
@@ -84,8 +87,8 @@ section.gallery{
                     font-size: 1.3rem;
                 }
                 @media (min-width: 1024px){
-                    font-size: 1.7rem;
-                    width: 80%;
+                    font-size: 1.2rem;
+                    width: 85%;
                 }
             }
         }
@@ -120,6 +123,12 @@ section.gallery{
                 }
                 p{
                     font-size: 1rem;
+                }
+                @media (min-width: 768px){
+                    padding: 25% 5%;
+                }
+                @media (min-width: 1024px){
+                    padding: 10% 5%;
                 }
             }
         }
